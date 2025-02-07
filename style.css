@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(21, 21, 21);
+    flex-direction: column;
+    gap: 20px;
+}
+
+#btnClick{
+    position: relative;
+    transition: 0.3s ease;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(46, 46, 127, 0.3);
+}
+
+#btnClick:hover{
+    background-color: rgba(124, 124, 255, 0.9);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.7);
+    
+}
+
+#btnClick:active{
+    background-color: rgb(46, 46, 255);
+    box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.2);
+
+}
+
+#pizzaInfo{
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.poper{
+    color: chartreuse;
+    position: absolute;
+    transition: 0.3s ease;
+    animation: pop 0.5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes pop {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+#chronoDiv{
+    height: 30px;
+    width: 30px;
+    background-color: chartreuse;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+#bestScore{
+    background-color: chartreuse;
+    border-radius: 12px;
+    padding: 12px;
+
+}
